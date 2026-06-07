@@ -89,18 +89,40 @@ body {
   color: #2563eb;
 }
 
+/* 타이핑 텍스트 본체 */
 .typing-text {
   font-size: 20px;
   color: #64748b;
-  min-height: 30px; /* 타이핑 전 레이아웃 흔들림 방지 */
+  min-height: 30px;
   margin-bottom: 30px;
+  display: inline-block; /* 텍스트 너비만큼만 공간을 차지하게 변경 */
 }
 
-.typing-cursor {
+/* 글자 바로 옆에 찰싹 붙어서 깜빡이는 커서 생성 */
+.typing-text::after {
+  content: '';
   display: inline-block;
   width: 3px;
+  height: 20px;
   background-color: #2563eb;
+  margin-left: 5px;
+  vertical-align: text-bottom;
   animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* 다크모드일 때 커서 색상도 맞춰서 변경 */
+body.dark-theme .typing-text::after {
+  background-color: #3b82f6;
 }
 
 @keyframes blink {
@@ -639,4 +661,35 @@ body.dark-theme .tech-tags {
 }
 body.dark-theme #modalDesc {
   color: #94a3b8;
+}
+/* 처음 접속 시 생동감을 주는 페이드인 애니메이션 */
+.fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 프로젝트 그룹 타이틀 (팀/개인 프로젝트 구분) */
+.project-group-title {
+  font-size: 22px;
+  color: #1e293b;
+  margin: 50px 0 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed #cbd5e1;
+  text-align: left;
+}
+
+/* 다크모드 프로젝트 그룹 타이틀 */
+body.dark-theme .project-group-title {
+  color: #f1f5f9;
+  border-bottom-color: #334155;
 }

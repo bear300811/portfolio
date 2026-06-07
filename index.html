@@ -21,7 +21,7 @@
     </nav>
 
     <section id="home" class="hero-section">
-      <div class="hero-content">
+      <div class="hero-content fade-in-up">
         <h1>
           <span class="highlight">보안</span>과
           <span class="highlight">웹 기술</span>의 융합
@@ -99,44 +99,93 @@
         <button class="filter-btn" data-filter="security">
           Security & Crypto
         </button>
-        <button class="filter-btn" data-filter="blockchain">Web3 & DApp</button>
         <button class="filter-btn" data-filter="web">Web Front</button>
       </div>
 
-      <div class="project-container">
-        <div
-          class="project-item"
-          data-category="security"
-          data-tech="Python, Cryptography, Security Protocol"
-          data-detail="Shamir's Secret Sharing(SSS) 알고리즘을 활용하여 팀원 간의 안전한 세션 키 분산 및 복구 메커니즘을 기획하고 구현한 프로젝트입니다."
-        >
-          <div class="project-thumb thumb-sec">Security</div>
-          <h3>Shamir 기반 팀 협업 세션 관리 프로그램</h3>
-          <p class="project-desc">
-            SSS 알고리즘을 적용한 안전한 세션 공유 시스템
-          </p>
-          <div class="project-links">
-            <button class="detail-btn">상세 보기</button>
+      <div class="project-group">
+        <h3 class="project-group-title">👥 Team Projects</h3>
+        <div class="project-container">
+          <div
+            class="project-item"
+            data-category="web"
+            data-tech="HTML, CSS, JS, Vercel"
+            data-detail="정보보안의 역사와 주요 암호 기술(에니그마 등)을 인터랙티브하게 소개하는 웹 페이지입니다."
+          >
+            <div class="project-thumb thumb-web">Web Front</div>
+            <h3>보안 박물관 (Security Museum)</h3>
+            <p class="project-desc">보안 역사와 기술을 소개하는 반응형 웹</p>
+            <div class="project-links">
+              <button class="detail-btn">상세 보기</button>
+              <a
+                href="https://web-project-mid.vercel.app/"
+                class="view-link"
+                target="_blank"
+                >배포 이동</a
+              >
+            </div>
           </div>
         </div>
+      </div>
 
-        <div
-          class="project-item"
-          data-category="web"
-          data-tech="HTML, CSS, JS, Vercel"
-          data-detail="정보보안의 역사와 주요 암호 기술(에니그마 등)을 인터랙티브하게 소개하는 웹 페이지입니다."
-        >
-          <div class="project-thumb thumb-web">Web Front</div>
-          <h3>보안 박물관 (Security Museum)</h3>
-          <p class="project-desc">보안 역사와 기술을 소개하는 반응형 웹</p>
-          <div class="project-links">
-            <button class="detail-btn">상세 보기</button>
-            <a
-              href="https://web-project-mid.vercel.app/"
-              class="view-link"
-              target="_blank"
-              >배포 이동</a
-            >
+      <div class="project-group">
+        <h3 class="project-group-title">👤 Personal Projects</h3>
+        <div class="project-container">
+          <div
+            class="project-item"
+            data-category="security"
+            data-tech="Python, Cryptography, Security Protocol"
+            data-detail="Shamir's Secret Sharing(SSS) 알고리즘을 활용하여 팀원 간의 안전한 세션 키 분산 및 복구 메커니즘을 기획하고 구현한 프로젝트입니다."
+          >
+            <div class="project-thumb thumb-sec">Security</div>
+            <h3>Shamir 기반 협업 세션 관리 프로그램</h3>
+            <p class="project-desc">
+              SSS 알고리즘을 적용한 안전한 세션 공유 시스템
+            </p>
+            <div class="project-links">
+              <button class="detail-btn">상세 보기</button>
+            </div>
+          </div>
+
+          <div
+            class="project-item"
+            data-category="web"
+            data-tech="HTML, CSS, Responsive Web"
+            data-detail="반응형 레이아웃을 적용한 웹 프로그래밍 개인 과제입니다."
+          >
+            <div class="project-thumb thumb-web">Web Demo</div>
+            <h3>Web Demo 과제</h3>
+            <p class="project-desc">
+              미디어 쿼리를 활용한 반응형 레이아웃 실습
+            </p>
+            <div class="project-links">
+              <button class="detail-btn">상세 보기</button>
+              <a
+                href="https://web2026-3.vercel.app/"
+                class="view-link"
+                target="_blank"
+                >배포 이동</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="project-item"
+            data-category="web"
+            data-tech="HTML, CSS Basics"
+            data-detail="HTML의 기본 태그들을 사용하여 간단한 웹 페이지의 뼈대를 만들어보는 기초 실습 과제입니다."
+          >
+            <div class="project-thumb thumb-web">HTML Basic</div>
+            <h3>HTML 기본 태그 과제</h3>
+            <p class="project-desc">웹 구조 설계를 위한 기본 마크업 실습</p>
+            <div class="project-links">
+              <button class="detail-btn">상세 보기</button>
+              <a
+                href="https://github.com/bear300811/WebProject2"
+                class="view-link"
+                target="_blank"
+                >코드 보기</a
+              >
+            </div>
           </div>
         </div>
       </div>
